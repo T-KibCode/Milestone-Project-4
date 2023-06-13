@@ -1,3 +1,5 @@
+import os
+
 """
 Django settings for milestonepp4 project.
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-6!kq8g1p7d90ay(qffxw_&mqyw%glju&e03#v=pfgbdj94sig&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-7q0i9wrqnvb.ws-eu99.gitpod.io']
+ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-rsiga3spvwc.ws-eu99.gitpod.io']
 
 
 # Application definition
@@ -63,8 +65,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',   # required by allauth
+                'django.template.context_processors.request',  # required by allauth
+                'django.contrib.auth.context_processors.auth', 
                 'django.contrib.messages.context_processors.messages',
             ],
         },
@@ -89,7 +91,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECCT_URL = '/success'
+LOGIN_REDIRECCT_URL = '/'
 
 WSGI_APPLICATION = 'milestonepp4.wsgi.application'
 
