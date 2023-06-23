@@ -33,5 +33,8 @@
          "name": "Yugioh",
          "group": "Yugioh"
       }
-   ]
+   ],
+   "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+   }
 }
