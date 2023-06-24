@@ -57,7 +57,7 @@ body {
 }
 
 .bg-black {
-    background: #000; !important
+    background: #000 !important;
 }
 
 @media (min-width: 1200px) {
