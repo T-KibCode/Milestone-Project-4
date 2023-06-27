@@ -5,21 +5,15 @@
                 All Services    
             </a>
             <div class="dropdown-menu border-0"  aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">By Products</a>
+                <a href="{% url 'products' %}?category=MusicProdServ" class="dropdown-item">Music Services</a>
+                <a href="{% url 'products' %}?category=VidServices" class="dropdown-item">Video Services</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="" id="all-products-link" aria-expanded="false"> 
                 Previous Work    
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Year</a>
-                <a href="" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">By Artist</a>
-            </div>
         </li>
 
         <li class="nav-item dropdown">
