@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    z-index: -2;
 }
 
 
@@ -18,6 +19,7 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
+
 
 .logo-font {
     text-transform: uppercase;
@@ -57,7 +59,17 @@ body {
 }
 
 .bg-black {
-    background: #000; !important
+    background: #000 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 @media (min-width: 1200px) {
