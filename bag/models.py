@@ -11,4 +11,3 @@ class MyModel(models.Model):
             MinMoneyValidator(Decimal(0.00)), MaxMoneyValidator(Decimal(999.99)),
         ]
     )
-
