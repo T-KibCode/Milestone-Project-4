@@ -30,7 +30,7 @@ def adjust_bag(request, item_id):
     if quantity > 0:
         bag[item_id] = quantity
     else:
-        del bag[item_id];
+        del bag[item_id]
         bag.pop(item_id)
 
     request.session['bag'] = bag
