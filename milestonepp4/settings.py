@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'djmoney.contrib.exchange',
+    'checkout',
 ]
 
 MIDDLEWARE = [
