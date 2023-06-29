@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'bag',
     'djmoney.contrib.exchange',
     'checkout',
+    'biography',
     
 
     # other
