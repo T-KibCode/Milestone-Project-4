@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'djmoney.contrib.exchange',
     'checkout',
     'biography',
+    'pastwork',
     
 
     # other
