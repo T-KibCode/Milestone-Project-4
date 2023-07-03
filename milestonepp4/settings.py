@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'checkout',
     'biography',
     'pastwork',
+    'embed_video',
     
 
     # other
