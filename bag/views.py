@@ -32,14 +32,23 @@ def add_to_bag(request, item_id):
 def adjust_bag(request, item_id):
     """ Adjust bag Quantity """
     quantity = int(request.POST.get('quantity'))
+    redirect_url = request.POST.get('redirect_url')
 
+    size = None 
+    if 'products_size' in request.POST:
+        siize = request.POST['product_size']
     bag = request.session.get('bag', {})
 
-    if quantity > 0:
-        bag[item_id] = quantity
+    if size:
+        if quantity > 0:
+            bag[item_id]['item_by_size'][size] = quantity
+        else:
+            del bag[item_id]['item_by_size'][size]
     else:
-        del bag[item_id]
-        bag.pop(item_id)
+        if quantity > 0:
+            bag[item_id] = quantity
+        else:
+            bag.pop(item_id)
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -49,8 +58,8 @@ def remove_bag(request, item_id):
     """ Remove bag Quantity """
 
     bag = request.session.get('bag', {})
-
-    if quantity > 0:
+    redirect_url = request.POST.get('redirect_url')
+    if quantity >= 0:
         bag[item_id] = quantity
     else:
         bag.pop(item_id)
