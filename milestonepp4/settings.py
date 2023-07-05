@@ -50,10 +50,12 @@ INSTALLED_APPS = [
     'checkout',
     'biography',
     'pastwork',
+    'profiles',
     'embed_video',
     # other
-    'crispy_forms',
+    'crispy_forms',    
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

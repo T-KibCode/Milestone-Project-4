@@ -8,10 +8,9 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
-    z-index: -2;
 }
 
-
+/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -19,7 +18,6 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
 
 .logo-font {
     text-transform: uppercase;
@@ -37,12 +35,12 @@ body {
 
 .btn-black {
     background: black;
-    color: white
+    color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important;
+    color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -59,12 +57,12 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: black;
+    background: #222;
     color: white;
 }
 
 .text-black {
-    color: black;
+    color: #000 !important;
 }
 
 .border-black {
@@ -76,18 +74,26 @@ body {
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: 5000;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
-a.category-badge>span.badge:hover {
+a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 .btt-link,
@@ -96,11 +102,13 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
-.message-container{
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
     position: fixed;
-    top: 10px;
+    top: 72px;
     right: 15px;
-    z-index: 1;
+    z-index: 99999999999;
 }
 
 .custom-toast {
@@ -111,96 +119,82 @@ a.category-badge>span.badge:hover {
     height: 2px;
 }
 
-.featurette-divider {
-    margin: 5rem 0;
-    /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
-
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.marketing h2 {
-    font-weight: 400;
-}
-
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
-
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    object-fit: cover;
-}
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
-
-
-/* Carousel base class */
-.carousel {
-    margin-bottom: 4rem;
-}
-
-
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
-
-.carousel-item {
-    height: 58rem;
-}
-
-.carousel-item>img {
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
     position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
+    top: -10px;
+    right: 36px;
 }
 
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
 
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-    .container {
-        max-width: 80%
-    }
+  .container {
+    max-width: 80%;
+  }
 }
 
+/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
         right: 0;
-        bottom: 0;
         left: 0;
         z-index: 1030;
     }
 
     .header-container {
-        padding-top: 164px
+        padding-top: 164px;
     }
 }
 
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
