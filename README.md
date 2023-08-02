@@ -106,3 +106,6 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+
+An Edit for the sake of uploading it to GitHub and trying to rebuild the heroku app once more.
