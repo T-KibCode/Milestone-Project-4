@@ -30,7 +30,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
 USER_AWS = os.environ.get('USER_AWS', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ 
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1', 'acharlesmusic.herokuapp.com', 'localhost', 'acharlesmusic-43faa2cd86df.herokuapp.com']
 
@@ -132,7 +132,10 @@ WSGI_APPLICATION = 'milestonepp4.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': 
+            dj_database_url.parse(
+                os.environ.get('DATABASE_URL') # type: ignore
+            )
     }
 else:
     DATABASES = {
@@ -191,7 +194,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'acharlesmusic'
     AWS_S3_REGION_NAME = 'eu-west-1'

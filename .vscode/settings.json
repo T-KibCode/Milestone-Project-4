@@ -36,5 +36,10 @@
    ],
    "[json]": {
       "editor.defaultFormatter": "vscode.json-language-features"
-   }
+   },
+   "python.analysis.typeCheckingMode": "basic",
+   "[python]": {
+      "editor.defaultFormatter": "ms-python.python"
+   },
+   "python.formatting.provider": "none"
 }
