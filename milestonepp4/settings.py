@@ -30,7 +30,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
 USER_AWS = os.environ.get('USER_AWS', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = 'False'
 
 ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1', 'acharlesmusic.herokuapp.com', 'localhost', 'acharlesmusic-43faa2cd86df.herokuapp.com']
 
