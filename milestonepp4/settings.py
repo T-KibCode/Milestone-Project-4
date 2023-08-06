@@ -32,7 +32,9 @@ USER_AWS = os.environ.get('USER_AWS', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1', 'acharlesmusic.herokuapp.com', 'localhost', 'acharlesmusic-43faa2cd86df.herokuapp.com']
+
+
+ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1', 'acharlesmusic.herokuapp.com', 'localhost', 'acharlesmusic-43faa2cd86df.herokuapp.com', 'https://8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu102.gitpod.io/', 'http://127.0.0.1:8000/', "8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu102.gitpod.io"]
 
 
 # Application definition
@@ -132,9 +134,9 @@ WSGI_APPLICATION = 'milestonepp4.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': 
+        'default':
             dj_database_url.parse(
-                os.environ.get('DATABASE_URL') # type: ignore
+                os.environ.get('DATABASE_URL')
             )
     }
 else:
