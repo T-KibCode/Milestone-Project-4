@@ -1,5 +1,6 @@
 import os
 import dj_database_url
+import django_heroku
 
 """
 Django settings for milestonepp4 project.
@@ -218,3 +219,5 @@ FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+django_heroku.settings(locals())
