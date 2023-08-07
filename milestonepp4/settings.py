@@ -203,7 +203,7 @@ if 'USE_AWS' in os.environ:
 
     # Static and Media Files
     STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles'),)
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
