@@ -32,7 +32,7 @@ USER_AWS = os.environ.get('USER_AWS', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'False'
 
-ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1', 'acharlesmusic.herokuapp.com', 'localhost', 'acharlesmusic-555624fc49b9.herokuapp.com' 'acharlesmusic-0fc1205f8f52.herokuapp.com']
+ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1', 'acharlesmusic.herokuapp.com', 'localhost', 'acharlesmusic-0fc1205f8f52.herokuapp.com']
 
 
 # Application definition
@@ -141,6 +141,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
 
 
 
