@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/static/css/media/background_room_1.JPG') no-repeat center center fixed;
+    background: url("/static/css/media/background_room_1.813d5076ccfb.JPG") no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
