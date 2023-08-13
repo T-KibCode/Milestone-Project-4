@@ -31,10 +31,13 @@ AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
 USER_AWS = os.environ.get('USER_AWS', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'DEVELOPMENT' in os.environ 
-DEBUG = 'True'
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1', 'acharlesmusic.herokuapp.com', 'localhost', 'acharlesmusic-0fc1205f8f52.herokuapp.com']
+
+ALLOWED_HOSTS = [
+    '8000-tkibcode-milestoneproje-4jbakrd1py8.ws-eu101.gitpod.io', '127.0.0.1',
+    'acharlesmusic.herokuapp.com', 'localhost',
+    'acharlesmusic-0fc1205f8f52.herokuapp.com']
 
 
 # Application definition
@@ -73,7 +76,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', # whitenoise
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # whitenoise
 ]
 
 ROOT_URLCONF = 'milestonepp4.urls'
@@ -91,7 +94,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',  # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -138,23 +141,25 @@ DATABASES = {
 }
 
 
-
-
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
