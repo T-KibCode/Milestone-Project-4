@@ -226,7 +226,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'acharles-music@gmail.com'
+    DEFAULT_FROM_EMAIL = 'a-charles-music@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
