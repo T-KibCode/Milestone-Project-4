@@ -89,13 +89,9 @@ As an **Admin SuperUser**, you possess all the abilities of Users and Store Admi
 
 The user stories define the diverse capabilities and experiences offered by the **A Charles Music** website. Whether you're a User seeking creative services, a Store Admin managing the product offerings, or an Admin SuperUser ensuring compliance and advanced management, this platform caters to your needs and empowers your interactions.
 
+## Color Palette
 
-
-
-
-
-
-
+The selected color palette for the website was thoughtfully chosen to align with the studio's existing branding. By incorporating shades of dark blue, light blue, black, and white into the website design, we aimed to maintain a strong visual connection with the studio's aesthetic. This strategic decision fosters a sense of familiarity and synergy between the online platform and the physical studio space, resulting in a unified and cohesive user experience.
 
 
 ## Future Implementation
