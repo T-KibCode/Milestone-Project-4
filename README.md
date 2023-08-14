@@ -1,111 +1,144 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Run Python script python3 -m http.server in order to see a preview of the project.
 
-Welcome T-KibCode,
+# Milestone-Project-2
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Github Repo Link [Milestone Project 4](https://github.com/T-KibCode/Milestone-Project-4)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Deployed Website: [A Charles Music]([https://t-kibcode.github.io/Milestone-Project-2/](https://acharlesmusic-0fc1205f8f52.herokuapp.com/))
 
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+![Screen shot of responsive website](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/responsive_screenshot.png)
 
 
-An Edit for the sake of uploading it to GitHub and trying to rebuild the heroku app once more.
+# A Charles Music Website - Readme Introduction
+
+Welcome to the **A Charles Music** website! This readme provides a comprehensive overview of the website, detailing its features, technologies, and the unique order notification system that enhances user experience.
+
+## About A Charles Music
+
+The **A Charles Music** website is a platform designed for the effortless booking of music and videography recording services with Mr. Charles. Whether you're a musician or an artist seeking captivating visuals, this platform offers a user-friendly booking process to bring your creative visions to life.
+
+## Key Features
+
+1. **User-Friendly Profiles**: Users can create personal profiles to manage bookings, track histories, and update contact information. This feature simplifies the interaction and ensures users stay informed of previous orders/purchases.
+
+2. **Streamlined Payments**: Secure payment processing via Stripe ensures confidence in transactions. Various payment methods are supported, adding convenience and trust for the user experience.
+
+3. **Responsive Interface**: Built with HTML, CSS, Bootstrap, and JavaScript, the website boasts a responsive design, adapting seamlessly to diverse screens and devices.
+
+4. **Order Notifications**: Users are promptly notified of their orders via email. Additionally, order details are available in their personal profiles on the website. This dual notification approach keeps users well-informed.
+
+5. **Heroku Deployment**: Hosting on Heroku offers scalability and reliability, ensuring uninterrupted access to the platform.
+
+## Technologies Used
+
+**A Charles Music** is built using a combination of technologies to provide a seamless and feature-rich experience for users. Here are the key technologies that power different aspects of the website:
+
+- **Django**: The core of the application is developed using the Django web framework. It provides a solid foundation for handling various aspects of the website's functionality. Learn more about Django at [https://www.djangoproject.com/](https://www.djangoproject.com/).
+
+- **HTML, CSS, JavaScript**: The frontend of the website is crafted using a combination of HTML, CSS, and JavaScript. These technologies ensure a responsive and interactive user interface.
+
+- **Bootstrap**: The website's design is enhanced and made responsive using the Bootstrap framework. Bootstrap simplifies the process of creating visually appealing layouts. Explore Bootstrap at [https://getbootstrap.com/](https://getbootstrap.com/).
+
+- **Stripe**: Secure and seamless payment processing is made possible through Stripe. It allows users to make payments for the recording services they choose. Discover Stripe's capabilities at [https://stripe.com/](https://stripe.com/).
+
+- **Heroku**: The website is deployed using Heroku, a cloud platform that ensures the application is accessible to users. Heroku simplifies the deployment process. Learn about Heroku at [https://www.heroku.com/](https://www.heroku.com/).
+
+- **ElephantSQL**: The PostgreSQL database used in the application is hosted on ElephantSQL. It provides a reliable and scalable database solution. Learn more about ElephantSQL at [https://www.elephantsql.com/](https://www.elephantsql.com/).
+
+- **Google Dev Tools**: Google Developer Tools are utilized to enhance the website's performance, debug issues, and ensure a smooth user experience. These tools provide valuable insights. Explore Google Dev Tools at [https://developers.google.com/web/tools](https://developers.google.com/web/tools).
+
+- **Visual Studio Code (VSCode)**: The development of the project is facilitated by VSCode, a powerful code editor. It offers a range of features for efficient coding, debugging, and version control. Learn more about VSCode at [https://code.visualstudio.com/](https://code.visualstudio.com/).
+
+By leveraging these technologies, **A Charles Music** offers a robust and user-friendly platform for booking music and videography recording services. Each technology contributes to a specific aspect of the website's functionality, ensuring a cohesive and efficient experience for users.
+
+## User Stories
+
+The **A Charles Music** website caters to various user roles, each with distinct capabilities and expectations.
+
+### User
+
+As a **User**, you have access to the following features:
+
+- **Product Selection**: Browse through the array of music and videography recording services offered. Choose the ones that align with your artistic needs.
+
+- **Account Creation**: Easily create a personal account on the website. This account allows you to manage your bookings, track order history, and update your contact information.
+
+- **Payment Process**: Utilize the secure payment gateway powered by Stripe. Safely pay for selected services within the webstore, enjoying a seamless and trustworthy transaction experience.
+
+### Store Admin
+
+As a **Store Admin**, you enjoy the features available to Users, plus additional functionalities:
+
+- **Product Management**: In addition to the User capabilities, you can add, delete, and edit products within the store. This ensures the product offerings are up-to-date and accurately reflect the services provided.
+
+### Admin SuperUser
+
+As an **Admin SuperUser**, you possess all the abilities of Users and Store Admins, along with more advanced privileges:
+
+- **Django Administration**: Access the Django administration back end of the site. This elevated access allows you to manually interact with higher authorization files.
+
+- **GDPR Compliance**: Address customer requests related to GDPR laws. You can make amendments to orders or remove user accounts as required to remain compliant with data protection regulations.
+
+## How to Use
+
+1. **User Functions**: Upon account creation, you can explore the available products, select the ones that suit you, and make secure payments within the webstore.
+
+2. **Store Admin Functions**: In addition to user functions, Store Admins can manage products by adding, deleting, and editing items to ensure an accurate and attractive product catalog.
+
+3. **Admin SuperUser Functions**: Along with user and Store Admin functions, Admin SuperUsers can access the Django administration back end for advanced management and GDPR compliance.
+
+The user stories define the diverse capabilities and experiences offered by the **A Charles Music** website. Whether you're a User seeking creative services, a Store Admin managing the product offerings, or an Admin SuperUser ensuring compliance and advanced management, this platform caters to your needs and empowers your interactions.
+
+
+
+
+
+
+
+
+
+
+## Future Implementation
+
+### In-Studio Booking and Calendar Integration
+
+An upcoming enhancement for **A Charles Music** is the integration of in-studio booking functionality along with seamless integration with Google Calendar. This addition aims to elevate the user experience, allowing customers who have successfully made payments through Stripe to directly schedule studio time for their music or videography recording sessions. The Google Calendar integration will serve as the foundation of this feature, ensuring a smooth and organized process.
+
+#### Key Benefits
+
+- **Effortless Booking**: After users confirm their payment and Stripe registers the payment as successful, they will seamlessly proceed with a streamlined in-studio booking process. This eliminates the need for users to make separate arrangements after payment and simplifies the overall experience.
+
+- **Real-time Availability**: The integration provides users with real-time visibility into the studio's availability. This enables users to select a time slot that best fits their schedule without the need for extensive communication.
+
+- **User-Friendly Interface**: The booking interface will prioritize user-friendliness, offering a simple and intuitive way to choose available time slots, making the booking process straightforward.
+
+- **Instant Confirmation and Notifications**: Upon successful booking, users will instantly receive confirmation of their scheduled session. The system will also automatically generate notifications, reminding users of their upcoming recording session.
+
+- **Admin Control**: This feature empowers the admin to effectively manage and oversee the booking schedule. Admins can accept or reject booking requests based on studio availability, ensuring a well-organized calendar.
+
+- **Enhanced Communication**: The integrated system will facilitate seamless communication between users and administrators. Any changes to bookings, such as rescheduling or cancellations, can be handled within the platform.
+
+#### Streamlined Experience Example
+
+1. **User Selects Service and Makes Payment**: Users choose their desired recording service and complete a successful payment through Stripe. They are then presented with the option to book an in-studio session.
+
+2. **Calendar Integration**: The website integrates with Google Calendar to display the studio's real-time availability. Available time slots are clearly marked for users to choose from.
+
+3. **Booking Submission**: Users select their preferred time slot and submit a booking request through the website.
+
+4. **Instant Confirmation**: After the booking request is accepted, users receive immediate confirmation of their scheduled session, both on the website and via email.
+
+5. **Notification Reminders**: As the session approaches, automated notification reminders are sent to users, ensuring they remember their booked slot.
+
+6. **Admin Management**: Admins can access the integrated calendar to manage incoming booking requests. They have the ability to accept or reject requests based on availability.
+
+By introducing this advanced booking feature, **A Charles Music** aims to provide users with a seamless end-to-end experience. From selecting services and making payments to securing recording studio time, all aspects can be managed within the same platform. This integration aligns with the commitment to enhancing user satisfaction and streamlining the recording process.
+
+
+
+
+
+
+
+
+
