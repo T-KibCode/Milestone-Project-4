@@ -4,7 +4,7 @@ Run Python script python3 -m http.server in order to see a preview of the projec
 
 Github Repo Link [Milestone Project 4](https://github.com/T-KibCode/Milestone-Project-4)
 
-Deployed Website: [A Charles Music]([https://t-kibcode.github.io/Milestone-Project-2/](https://acharlesmusic-0fc1205f8f52.herokuapp.com/))
+Deployed Website: [A Charles Music](https://acharlesmusic-0fc1205f8f52.herokuapp.com/)
 
 ![Screen shot of responsive website](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/responsive_screenshot.png)
 
