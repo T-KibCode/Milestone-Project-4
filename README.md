@@ -1,6 +1,4 @@
-Run Python script python3 -m http.server in order to see a preview of the project.
-
-# Milestone-Project-2
+# Milestone-Project-4
 
 Github Repo Link [Milestone Project 4](https://github.com/T-KibCode/Milestone-Project-4)
 
