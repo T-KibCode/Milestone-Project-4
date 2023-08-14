@@ -89,6 +89,8 @@ The user stories define the diverse capabilities and experiences offered by the 
 
 ## Color Palette
 
+[Color Palette](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/PP4%20Pallete.png)
+
 The selected color palette for the website was thoughtfully chosen to align with the studio's existing branding. By incorporating shades of dark blue, light blue, black, and white into the website design, we aimed to maintain a strong visual connection with the studio's aesthetic. This strategic decision fosters a sense of familiarity and synergy between the online platform and the physical studio space, resulting in a unified and cohesive user experience.
 
 
