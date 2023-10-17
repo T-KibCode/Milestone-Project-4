@@ -97,21 +97,22 @@ The selected color palette for the website was thoughtfully chosen to align with
 
 ### W3 HTML 
 - The W3 HTML validator only returned errors in the validation due to the python load static tags and the validator highlighting the html "lang" tag. This produces minor warnings, however, this does not impact the running of the eCommerce store [HTML Validator](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.31.png)
-[HTML SCreenshot 2](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.18.png)
+![HTML SCreenshot 2](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.18.png)
 
 ### W3 C3S
 
-- The W3 C3S validator returned no errors [CSS Validator](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.58.png)
+- The W3 C3S validator returned no errors
+![CSS Validator](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.58.png)
 
 ### PEP8 Validator
 - When running my Python code through the validator, it returned a range of scores between 64% and 94%. so I looked for tools that I could use online in order to improve my validation score on the code itself. I then found the website *Online Python Formatter* {https://www.tutorialspoint.com/online_python_formatter.htm} and using this website, I was able to correct indentation errors in my code to make it both more readable, and also ensure the Python code reaches the highest validation through the PEP8 syntax checker. There are still some pages of code that fall below 80%, however, these do not impact the app's processing and all indentation has been corrected.
 I have also used a built-in Python tester within my IDE, however, when addressing the core issues of lines being too long, it would then break the function of the Python code OR not recognize the extra line of code. 
-[Screenshot1](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.45.25.png)
-[Screenshot2](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.22.13.png)
-[Screenshot3](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.21.00.png)
-[Screenshot4](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.19.45.png)
-[Screenshot5](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.19.26.png)
-[Screenshot6](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.18.57.png)
+![Screenshot1](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.45.25.png)
+![Screenshot2](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.22.13.png)
+![Screenshot3](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.21.00.png)
+![Screenshot4](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.19.45.png)
+![Screenshot5](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.19.26.png)
+![Screenshot6](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.18.57.png)
 
 
 Any Python code that does not run through this validator within my project is redundant, though I have kept it present for the sake of showing my initial planning before the step change within my project. However in a fully commercial production environment, these would be deleted/removed. 
