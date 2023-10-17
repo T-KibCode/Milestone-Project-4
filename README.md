@@ -93,6 +93,62 @@ The user stories define the diverse capabilities and experiences offered by the 
 
 The selected color palette for the website was thoughtfully chosen to align with the studio's existing branding. By incorporating shades of dark blue, light blue, black, and white into the website design, we aimed to maintain a strong visual connection with the studio's aesthetic. This strategic decision fosters a sense of familiarity and synergy between the online platform and the physical studio space, resulting in a unified and cohesive user experience.
 
+# Online Validators
+
+### W3 HTML 
+- The W3 HTML validator only returned errors in the validation due to the python load static tags and the validator highlighting the html "lang" tag. This produces minor warnings, however, this does not impact the running of the eCommerce store [HTML Validator](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.31.png)
+[HTML SCreenshot 2](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.18.png)
+
+### W3 C3S
+
+- The W3 C3S validator returned no errors [CSS Validator](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.47.58.png)
+
+### PEP8 Validator
+- When running my Python code through the validator, it returned a range of scores between 64% and 94%. so I looked for tools that I could use online in order to improve my validation score on the code itself. I then found the website *Online Python Formatter* {https://www.tutorialspoint.com/online_python_formatter.htm} and using this website, I was able to correct indentation errors in my code to make it both more readable, and also ensure the Python code reaches the highest validation through the PEP8 syntax checker. There are still some pages of code that fall below 80%, however, these do not impact the app's processing and all indentation has been corrected.
+I have also used a built-in Python tester within my IDE, however, when addressing the core issues of lines being too long, it would then break the function of the Python code OR not recognize the extra line of code. 
+[Screenshot1](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2009.45.25.png)
+[Screenshot2](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.22.13.png)
+[Screenshot3](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.21.00.png)
+[Screenshot4](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.19.45.png)
+[Screenshot5](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.19.26.png)
+[Screenshot6](https://github.com/T-KibCode/Milestone-Project-4/blob/main/screenshots_for_readme/Screen%20Shot%202023-10-17%20at%2002.18.57.png)
+
+
+Any Python code that does not run through this validator within my project is redundant, though I have kept it present for the sake of showing my initial planning before the step change within my project. However in a fully commercial production environment, these would be deleted/removed. 
+
+### Javascript validator
+- As this project did not use any javascript outside of the Bootstrap CDN link, there was no need to run any JS through an external validator.
+
+
+# Deployment
+
+The App has been deployed using Heroku and can be found at the following link: https://news-flash.herokuapp.com/.
+I used the following steps to deploy the app to Heroku:
+- Log into the Heroku website and create a new app.
+- Select the region closest to you.
+- Click on the Deploy tab and select Heroku Git as the deployment method.
+- Install the Heroku CLI and log into your account using the command heroku login -i.
+- Create a requirements.txt file using the command pip3 freeze > requirements.txt.
+- Create a Procfile using the command echo web: python app.py > Procfile.
+- Add and commit the files to Git using the commands git add . and git commit -m "Initial commit".
+- Add the Heroku app as a remote using the command heroku git: remote -a <news-flash>.
+- Push the files to Heroku using the command git push heroku master.
+- Set the IP and PORT environment variables in the Heroku Config Vars.
+- Click on the Deploy Tab and click on Enable Automatic Deploys.
+- Link the App to the GitHub repository using the Connect to GitHub option.
+- Click on Deploy Branch to deploy the app to Heroku.
+- Check that the app now deploys when a commit is made to Git Hub.
+
+## Additional Deployment steps 
+- Setting up an AWS account
+- retrieving the Variable env key to access the account
+- setting up static files directory within the project.
+- use the Django app to make migrations and forcibly upload the images and static files to aws via the CLI.
+- check the files within AWS to make sure naming conventions match the original file names.
+- check the code once more to ensure correct routing for the new location when in the live production.
+- ensure else if variables pointing to either the original location or the AWS location are correct to ensure it work both in a test or live environment.  
+
+
 
 ## Future Implementation
 
